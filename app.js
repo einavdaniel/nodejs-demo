@@ -14,7 +14,7 @@ sayhey = function (req, res) {
         res.send("Hello from NodeJS!")
 
     } catch (error) {
-        res.status(500).send("Couldn't get data from file. " + error.message)
+        res.status(500).send("Couldn't say hello :( " + error.message)
     }
 
 }
