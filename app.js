@@ -1,3 +1,6 @@
+const PORT = 4000;
+const HOST = 'localhost';
+
 var express = require('express');
 var app = express();
 var cors = require('cors');
@@ -21,5 +24,5 @@ app.use(bodyParser.json())
 
 app.get('/', sayhey);
 
-var server = app.listen(4000, function () { });
-console.log("Server is running on port 4000...")
+var server = app.listen(PORT, function () { });
+console.log(`Server is running at http://${HOST}:${PORT}/`)
